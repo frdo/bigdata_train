@@ -55,7 +55,6 @@ def deleteTable(tablename):
     # We can delete a table using the following code
     content =  '<?xml version="1.0" encoding="UTF-8"?>'
     content += '<TableSchema name="' + tablename + '">'
-    content += '  <ColumnSchema name="' + cfname + '" />'
     content += '</TableSchema>'
 
     request = requests.delete(baseurl + "/" + tablename + "/schema")
