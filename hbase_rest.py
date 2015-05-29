@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 # Tutorial from:
-# http://blog.cloudera.com/blog/2013/03/how-to-use-the-apache-hbase-rest-interface-part-1/
+# [COVERED] http://blog.cloudera.com/blog/2013/03/how-to-use-the-apache-hbase-rest-interface-part-1/
+# [       ] http://blog.cloudera.com/blog/2013/04/how-to-use-the-apache-hbase-rest-interface-part-2/
+# [       ] http://blog.cloudera.com/blog/2013/07/how-to-use-the-apache-hbase-rest-interface-part-3/
 
 ############################################################
 # Using the REST interface, you can create or delete tables#
