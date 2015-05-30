@@ -37,11 +37,14 @@ def issuccessful(request):
     #if 200
     pass
 
-def createTable(tablename, cfname):
+def createTable(tablename, *cfname):
     # Let’s take a look at the code to create a table
     content =  '<?xml version="1.0" encoding="UTF-8"?>'
     content += '<TableSchema name="' + tablename + '">'
-    content += '  <ColumnSchema name="' + cfname + '" />'
+    
+    for cf in cfname:
+        content += '  <ColumnSchema name="' + cf + '" />'
+    
     content += '</TableSchema>'
 
     request = requests.post(baseurl + "/" + tablename + "/schema", data=content, headers={"Content-Type" : "text/xml", "Accept" : "text/xml"})
